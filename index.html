@@ -28,7 +28,7 @@
     </div>
     <div class="form-div">
         <div class="top-row">
-            <p style="max-width: 60ch;">
+            <p>
                 This is not a real online service! You know you need something
                 like this in your life to help you realize your deepest dreams. <br>
                 Sign up <i>now</i> to get started
@@ -38,29 +38,57 @@
             </p>
         </div>
         <form action="index.html" class="form-row">
-            <p class="form-p">Let's do this</p>
+            <p class="form-p">Let's do this!</p>
             <div>
-                <label for="">
-                    FIRST NAME<input type="text" required>
+                <label for="first-name">
+                    FIRST NAME<input type="text" 
+                    id="first-name"
+                    name="first-name"
+                    placeholder=" " required>
                 </label>
-                <label for="">
-                    LAST NAME<input type="text" required>
+                <label for="last-name">
+                    LAST NAME<input type="text"
+                    id="last-name"
+                    name="last-name"
+                    placeholder=" "  required>
                 </label>
             </div>
             <div>
-                <label for="">
-                    EMAIL<input type="text" required>
+                <label for="email">
+                    EMAIL<input type="email"
+                    id="email"
+                    name="email"
+                    placeholder=" "  required>
                 </label>
-                <label for="">
-                    PHONE NUMBER<input type="text" required>
+                <label for="phone-number">
+                    PHONE NUMBER<input type="tel"
+                    id="phone-number"
+                    name="phone-number"
+                    placeholder=" "
+                    required>
                 </label>
             </div>
             <div>
-                <label for="">
-                    PASSWORD<input type="text" required>
-                </label>
-                <label for="">
-                    CONFIRM PASSWORD<input type="text" required>
+                <div>
+                    <label for="pswd">
+                        PASSWORD<input type="password"
+                        id="pswd"
+                        name="pswd"
+                        pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}"
+                        required>
+                        <p id="pass-span">
+                            
+                        </p>
+                    </label>
+
+                    
+                </div>
+                <label for="pswd-confirm">
+                    CONFIRM PASSWORD<input type="password"
+                    id="pswd-confirm"
+                    name="pswd-confirm"
+                    pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}"
+                     required>
                 </label>
             </div>
         </form>
